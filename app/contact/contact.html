@@ -1,0 +1,30 @@
+<div class="row" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <div class="col-lg-6">
+        <div map-lazy-load="https://maps.google.com/maps/api/js">
+            <ng-map center="49.62,20.69" zoom="15">
+                <marker position="[49.620072, 20.6911693]" title="artstudio" animation="Animation.BOUNCE" centered="true"></marker>
+            </ng-map>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <h2>Napisz do nas!</h2>
+        <form novalidate class="simple-form">
+            <label>E-mail: <br><input type="text" ng-model="user.name" /></label><br />
+            <label>Wiadomość: </label><br><textarea type="email" ng-model="user.email" /></textarea><br />
+        </form>
+    </div>
+    <div class="col-lg-3">
+        <h2>Adres</h2>
+        <div>
+            Art studio<br>
+            ul. Jagiellońska 8<br>
+            33-300 Nowy Sącz<br>
+            tel. 500 620 286
+        </div>
+        <div>
+            <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>

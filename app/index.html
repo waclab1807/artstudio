@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="artstudio" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="artstudio" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="artstudio" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="artstudio" class="no-js"> <!--<![endif]-->
+<head>
+  <!--<base href="/">-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Studio Artystyczne</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <div>
+        <img src="http://lorempixel.com/output/fashion-q-c-1024-600-8.jpg" class="jumbotronImg" alt="">
+      </div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Strona główna <span class="sr-only">(current)</span></a></li>
+              <li><a href="#/chedule">Harmonogram</a></li>
+              <li><a href="#/prices">Cennik</a></li>
+              <li><a href="#/gallery">Galeria</a></li>
+              <li><a href="#/contact">Kontakt</a></li>
+              <li><a href="#/instructions">Instruktorzy</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="container well" ng-view></div>
+    </div>
+    <div id="footer">
+      Copyright Wacław Łabuda
+    </div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-bridget/jquery-bridget.js"></script>
+  <script src="bower_components/ev-emitter/ev-emitter.js"></script>
+  <script src="bower_components/desandro-matches-selector/matches-selector.js"></script>
+  <script src="bower_components/fizzy-ui-utils/utils.js"></script>
+  <script src="bower_components/get-size/get-size.js"></script>
+  <script src="bower_components/outlayer/item.js"></script>
+  <script src="bower_components/outlayer/outlayer.js"></script>
+  <script src="bower_components/masonry/masonry.js"></script>
+  <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+  <script src="//maps.google.com/maps/api/js?libraries=places&key=AIzaSyB7fFO56b3ZkPeU7ERi8TBd9px9nB4KynM"></script>
+  <script src="app.js"></script>
+  <script src="main/main.js"></script>
+  <script src="gallery/gallery.js"></script>
+  <script src="chedule/chedule.js"></script>
+  <script src="prices/prices.js"></script>
+  <script src="instructors/instructors.js"></script>
+  <script src="contact/contact.js"></script>
+  <script>
+    $(".nav a").on("click", function(){
+      $(".nav").find(".active").removeClass("active");
+      $(this).parent().addClass("active");
+    });
+  </script>
+</body>
+</html>
