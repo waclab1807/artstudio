@@ -144,6 +144,10 @@ body {
 .prices h2 {
   text-align: center;
   padding-bottom: 20px; }
+.prices h3 {
+  text-align: center; }
+  .prices h3 a {
+    text-decoration: none; }
 .prices .table {
   background: rgba(255, 255, 255, 0.25);
   display: table; }
@@ -181,6 +185,12 @@ body {
 
 /* instructors section end */
 /* contact section start */
+.contact form input {
+  width: 200px;
+  color: black; }
+.contact form textarea {
+  color: black;
+  width: 200px; }
 .contact a {
   color: white; }
   .contact a:active {
@@ -232,10 +242,30 @@ video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
   background-size: cover;
   transition: 1s opacity;
   filter: blur(5px);
   -webkit-filter: blur(5px); }
+
+/* media queries */
+@media all and (max-width: 600px) {
+  .jumbotronImg {
+    max-height: 150px; }
+
+  .gallery #container {
+    width: 400px; } }
+@media all and (max-width: 800px) and (min-width: 600px) {
+  .jumbotronImg {
+    max-height: 250px; }
+
+  .gallery #container {
+    width: 600px; } }
+@media all and (max-width: 1366px) and (min-width: 800px) {
+  .jumbotronImg {
+    height: auto;
+    max-height: 350px; }
+
+  .gallery #container {
+    width: 800px; } }
 
 /*# sourceMappingURL=main.css.map */
