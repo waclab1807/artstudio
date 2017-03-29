@@ -50,6 +50,13 @@ body {
     }
   }
 
+  .navbar-toggle {
+    border-color: white;
+    span {
+      background-color: white;
+    }
+  }
+
   .navbar .navbar-collapse {
     text-align: center;
   }
@@ -88,7 +95,7 @@ body {
 
 #container {
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
 }
 
 .photo {
@@ -147,6 +154,7 @@ body {
     background-color: #E47A8D;
   }
   .table {
+    background: rgba(255, 255, 255, 0.25);
     display:table;
     text-align: center;
   }
@@ -159,7 +167,7 @@ body {
     padding: 15px;
   }
   .header {
-    background-color: #1F1FEC;
+    background-color: #1D5C7D;
     height: 40px;
     padding: 20px;
     font-weight:bold;
@@ -170,18 +178,27 @@ body {
 
 /* prices section start */
 .prices {
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
   .table {
+    background: rgba(255, 255, 255, 0.25);
     display:table;
   }
   .row {
+    text-align: center;
     display:table-row;
   }
   .cell {
     border: 1px solid white;
     display:table-cell;
-    padding:2px;
+    padding: 10px;
   }
   .header {
+    background-color: #1D5C7D;
+    height: 40px;
+    padding: 20px;
     font-weight:bold;
     text-align:center;
   }
@@ -197,7 +214,9 @@ body {
   .row {
     margin: 100px 0;
     .description {
-
+      span {
+        font-weight: bold;
+      }
     }
     .person {
       -webkit-border-radius: 50%;
@@ -212,6 +231,17 @@ body {
   }
 }
 /* instructors section end */
+
+/* contact section start */
+.contact {
+  a {
+    color: white;
+    &:active {
+      color: #1D5C7D;
+    }
+  }
+}
+/* contact section end */
 
 /* Start: Recommended Isotope styles */
 
@@ -258,3 +288,20 @@ body {
 }
 
 /* End: Recommended Isotope styles */
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}

@@ -22,7 +22,7 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
     controller: 'galleryCtrl'
   })
 
-  .when('/instructions', {
+  .when('/instructors', {
       templateUrl: 'instructors/instructors.html',
       controller: 'instructorsCtrl'
   })

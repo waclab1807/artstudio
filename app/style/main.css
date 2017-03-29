@@ -38,6 +38,10 @@ body {
       color: #a6742c !important; }
       body .navbar .navbar-nav a:hover, body .navbar .navbar-nav a:focus {
         background: #2c3e54; }
+  body .navbar-toggle {
+    border-color: white; }
+    body .navbar-toggle span {
+      background-color: white; }
   body .navbar .navbar-collapse {
     text-align: center; }
   body #footer {
@@ -68,7 +72,7 @@ body {
 
 #container {
   margin: 0 auto;
-  width: 800px; }
+  width: 1200px; }
 
 .photo {
   width: 200px;
@@ -119,6 +123,7 @@ body {
 .chedule .creative {
   background-color: #E47A8D; }
 .chedule .table {
+  background: rgba(255, 255, 255, 0.25);
   display: table;
   text-align: center; }
 .chedule .row {
@@ -128,7 +133,7 @@ body {
   border: 1px solid white;
   padding: 15px; }
 .chedule .header {
-  background-color: #1F1FEC;
+  background-color: #1D5C7D;
   height: 40px;
   padding: 20px;
   font-weight: bold;
@@ -136,15 +141,23 @@ body {
 
 /* chedule section end */
 /* prices section start */
+.prices h2 {
+  text-align: center;
+  padding-bottom: 20px; }
 .prices .table {
+  background: rgba(255, 255, 255, 0.25);
   display: table; }
 .prices .row {
+  text-align: center;
   display: table-row; }
 .prices .cell {
   border: 1px solid white;
   display: table-cell;
-  padding: 2px; }
+  padding: 10px; }
 .prices .header {
+  background-color: #1D5C7D;
+  height: 40px;
+  padding: 20px;
   font-weight: bold;
   text-align: center; }
 
@@ -154,6 +167,8 @@ body {
   text-align: justify; }
   .instructors .row {
     margin: 100px 0; }
+    .instructors .row .description span {
+      font-weight: bold; }
     .instructors .row .person {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -165,6 +180,13 @@ body {
       object-fit: fill; }
 
 /* instructors section end */
+/* contact section start */
+.contact a {
+  color: white; }
+  .contact a:active {
+    color: #1D5C7D; }
+
+/* contact section end */
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
 .isotope-item {
@@ -200,5 +222,20 @@ body {
   transition-duration: 0s; }
 
 /* End: Recommended Isotope styles */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+  filter: blur(5px);
+  -webkit-filter: blur(5px); }
 
 /*# sourceMappingURL=main.css.map */
