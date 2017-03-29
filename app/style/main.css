@@ -37,7 +37,7 @@ body {
     vertical-align: top; }
     body .navbar .navbar-nav a {
       color: #a6742c !important; }
-      body .navbar .navbar-nav a:hover {
+      body .navbar .navbar-nav a:hover, body .navbar .navbar-nav a:focus {
         background: #2c3e54; }
   body .navbar .navbar-collapse {
     text-align: center; }
@@ -114,6 +114,22 @@ body {
   left: -16px;
   top: -16px; }
 
+/* instructors section start */
+.instructors {
+  text-align: justify; }
+  .instructors .row {
+    margin: 100px 0; }
+    .instructors .row .person {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      object-fit: fill; }
+
+/* instructors section end */
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
 .isotope-item {

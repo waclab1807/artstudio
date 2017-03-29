@@ -44,7 +44,7 @@ body {
     vertical-align: top;
     a {
       color: #a6742c !important;
-      &:hover {
+      &:hover, &:focus {
         background: #2c3e54;
       }
     }
@@ -138,6 +138,31 @@ body {
   left: -16px;
   top: -16px;
 }
+
+/* instructors section start */
+.instructors {
+  text-align: justify;
+  img {
+
+  }
+  .row {
+    margin: 100px 0;
+    .description {
+
+    }
+    .person {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      object-fit: fill;
+    }
+  }
+}
+/* instructors section end */
 
 /* Start: Recommended Isotope styles */
 
