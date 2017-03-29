@@ -14,36 +14,140 @@ html {
   padding-bottom: 50px;
   /* ATTENTION! padding-bottom should be equal to the footer height (this keeps the footer from overlapping the content) */ }
 
+.container {
+  margin-bottom: 60px;
+  color: white;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 20px;
+  border: 2px solid white; }
+
 body {
+  font-family: "Lato", sans-serif !important;
   background-color: #0f0f0f;
   margin: 0;
   padding: 0;
   height: 100%; }
   body .jumbotronImg {
-    width: 100%;
     height: 400px; }
   body .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top; }
+    body .navbar .navbar-nav a {
+      color: #a6742c !important; }
+      body .navbar .navbar-nav a:hover {
+        background: #2c3e54; }
   body .navbar .navbar-collapse {
     text-align: center; }
   body #footer {
     position: absolute;
     width: 100%;
-    text-align: center;
-    vertical-align: middle;
     clear: both;
     bottom: 0;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0;
+    padding-left: 20px;
     /* ATTENTION! The following elements below
     can be set to whatever your heart desires */
-    height: 50px;
+    height: 40px;
     /* REMEMBER height = padding-bottom */
     background: gray; }
+    body #footer a {
+      color: #1D5C7D; }
+
+.main {
+  text-align: center; }
+  .main h2 {
+    padding: 0 200px 30px 200px;
+    line-height: 50px; }
+  .main img {
+    width: 80%; }
 
 .masonry-brick {
   margin: 1em; }
+
+#container {
+  margin: 0 auto;
+  width: 800px; }
+
+.photo {
+  width: 200px;
+  float: left; }
+
+.photo.double {
+  width: 480px; }
+
+.photo.large {
+  width: 600px;
+  z-index: 3; }
+
+.photo.large .small-image,
+.photo .big-image {
+  display: none; }
+
+.photo .small-image,
+.photo.large .big-image {
+  display: block; }
+
+.photo img {
+  display: block;
+  width: 100%; }
+
+.photo .loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7); }
+
+.photo .loading span {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.photo .loading img {
+  width: auto;
+  position: absolute;
+  left: -16px;
+  top: -16px; }
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s; }
+
+/* End: Recommended Isotope styles */
 
 /*# sourceMappingURL=main.css.map */

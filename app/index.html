@@ -14,17 +14,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="style/main.css">
 
 </head>
 <body>
+<div style="text-align: center">
+  <img src="gallery/photos/1.jpg" class="jumbotronImg" alt="">
+</div>
   <div id="wrapper">
     <div id="content">
-      <div>
-        <img src="http://lorempixel.com/output/fashion-q-c-1024-600-8.jpg" class="jumbotronImg" alt="">
-      </div>
-
-      <nav class="navbar navbar-default">
+      <nav class="navbar">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -39,7 +39,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Strona główna <span class="sr-only">(current)</span></a></li>
+              <li><a href="#/">Strona główna <span class="sr-only">(current)</span></a></li>
               <li><a href="#/chedule">Harmonogram</a></li>
               <li><a href="#/prices">Cennik</a></li>
               <li><a href="#/gallery">Galeria</a></li>
@@ -50,10 +50,10 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <div class="container well" ng-view></div>
+      <div class="container" ng-view></div>
     </div>
     <div id="footer">
-      Copyright Wacław Łabuda
+      Copyright © 2017 <a href="http://waclabdev.pl" target="_blank">WACLABDEV Wacław Łabuda</a>
     </div>
   </div>
 
@@ -72,6 +72,8 @@
   <script src="bower_components/angular-masonry/angular-masonry.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+  <!--<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>-->
+  <script src="//isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
   <script src="//maps.google.com/maps/api/js?libraries=places&key=AIzaSyB7fFO56b3ZkPeU7ERi8TBd9px9nB4KynM"></script>
   <script src="app.js"></script>
   <script src="main/main.js"></script>
